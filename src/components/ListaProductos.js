@@ -12,7 +12,18 @@ class ListaProductos extends Component {
         totalCarrito: 500,
         cliente: 'Cesar Cueva'
     }
+
+    componentDidMount(){
+        console.log(1)
+    }
+    componentWillMount(){
+        console.log(2)
+    }
+    componentWillUpdate(){
+        console.log(3)
+    }
     render() { 
+        console.log(4)
         const {productos} = this.state;
         return (
             <Fragment>
